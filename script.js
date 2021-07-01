@@ -52,7 +52,6 @@ function createKeyValuePair() {
 
 function keyValuePairsToObjects(container) {
   const pairs = container.querySelectorAll("[data-key-value-pair]")
-  console.log(`pairs = ${pairs}`)
 
   return [...pairs].reduce((data, pair) => {
     const key = pair.querySelector("[data-key]").value
